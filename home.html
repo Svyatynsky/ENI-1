@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220713123045">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo logo"><picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt=""></picture></a>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="firstscreen">
+				<div class="firstscreen__container">
+					<div class="firstscreen__content">
+						<div class="firstscreen__title title">
+							Sei arrivato alla pagina dell'estrazione
+							della carta regalo dell'Agip Eni
+						</div>
+						<p class="firstscreen__text text">
+							Gira la ruota per determinare le tue vincite
+						</p>
+						<p class="firstscreen__text text">
+							Partecipano all'estrazione le carte con un saldo di:
+							<span>100€, 200€, 500€, 1000€</span>
+						</p>
+					</div>
+					<div class="firstscreen__image-card"><picture><source srcset="img/home/firstscreen/card.webp" type="image/webp"><img src="img/home/firstscreen/card.png" alt=""></picture></div>
+				</div>
+				<div class="firstscreen__image-refueling"><picture><source srcset="img/home/firstscreen/refueling.webp" type="image/webp"><img src="img/home/firstscreen/refueling.png" alt=""></picture></div>
+			</div>
+			<div class="roulette" style="background-image: url(img/home/roulette/roulette-bg.png);">
+				<div class="roulette__container">
+					<div class="roulette__wheel">
+						<picture><source srcset="img/home/roulette/roulette-wheel.webp" type="image/webp"><img id="wheel-image" class="roulette__image" src="img/home/roulette/roulette-wheel.png" alt=""></picture>
+						<div id="wheel-button" class="roulette__button"><picture><source srcset="img/home/roulette/roulette-button.webp" type="image/webp"><img src="img/home/roulette/roulette-button.png" alt=""></picture></div>
+					</div>
+				</div>
+				<div id="popup-congratulations" aria-hidden="true" class="popup popup-congratulations">
+					<div class="popup-congratulations__wrapper popup__wrapper">
+						<div class="popup-congratulations__content popup__content">
+							<div class="popup-congratulations__title popup__title title">Congratulazioni!</div>
+							<p class="popup-congratulations__text text">Tocca il pulsante per ottenere il tuo premio!</p>
+							<div class="popup-congratulations__prize"><picture><source srcset="img/popup/congratulations-prize.webp" type="image/webp"><img src="img/popup/congratulations-prize.png" alt=""></picture></div>
+							<a href="https://google.com" target="_blank" class="popup-congratulations__button popup__button button">vincere un premio</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="popup-try" aria-hidden="true" class="popup popup-try">
+					<div class="popup-try__wrapper popup__wrapper">
+						<div class="popup-try__content popup__content">
+							<div class="popup-try__title popup__title title">Riprova!</div>
+							<div class="popup-try__wheel"><picture><source srcset="img/popup/try-wheel.webp" type="image/webp"><img src="img/popup/try-wheel.png" alt=""></picture></div>
+							<button class="popup-try__button popup__button button">rotazione</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="previous-winners" style="background-image: url(img/home/previous-winners/previous-winners-bg.svg);">
+				<div class="previous-winners__container">
+					<div class="previous-winners__title title">Vincitori recenti</div>
+					<div class="previous-winners__content">
+						<div class="previous-winners__images">
+							<div class="previous-winners__image"><picture><source srcset="img/home/previous-winners/1.webp" type="image/webp"><img src="img/home/previous-winners/1.jpg" alt=""></picture></div>
+							<div class="previous-winners__image"><picture><source srcset="img/home/previous-winners/2.webp" type="image/webp"><img src="img/home/previous-winners/2.jpg" alt=""></picture></div>
+							<div class="previous-winners__image"><picture><source srcset="img/home/previous-winners/3.webp" type="image/webp"><img src="img/home/previous-winners/3.jpg" alt=""></picture></div>
+							<div class="previous-winners__image"><picture><source srcset="img/home/previous-winners/4.webp" type="image/webp"><img src="img/home/previous-winners/4.jpg" alt=""></picture></div>
+						</div>
+						<div class="previous-winners__media">
+							<div class="previous-winners__cup"><picture><source srcset="img/home/previous-winners/cup.webp" type="image/webp"><img src="img/home/previous-winners/cup.png" alt=""></picture></div>
+							<a data-goto=".roulette" href="#" class="previous-winners__link button">Tentare la fortuna</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="popup-demo" data-popup="#popup-congratulations" href="">Первая модалка</a>
+			<a class="popup-demo" data-popup="#popup-try" href="">Вторая модалка</a>
+
+		</main>
+	</div>
+
+	<script src="js/app.min.js?_v=20220713123045"></script>
+
+</body>
+
+</html>
